@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <h1>Mortgage Calculator</h1>
+    <p class="clear">Clear all</p>
+
+    <main>
+        <form>
+            <p>
+                <label for="amount">Mortgage Amount</label>
+                <input type="number" name="amount" id="amount">
+            </p>
+            <p>
+                <label for="term">Mortgage Term</label>
+                <input type="number" name="term" id="term">
+            </p>
+            <p>
+                <label for="rate">Interest Rate</label>
+                <input type="number" name="rate" id="rate">
+            </p>
+            <p>
+                Mortgage Type
+                <input type="radio" name="type" id="repayment">Repayment
+                <input type="radio" name="type" id="interest">Interest Only
+            </p>
+            <input type="button" value="Calculate Repayments">
+        </form>
+        <section class="results">
+            <img src="assets/images/illustration-empty.svg"">
+            <h2>Results shown here</h2>
+            <p>Complete the form and click "calculate repayments" too see what your monthly repayments would be</p>
+        </section>
+
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
