@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Mortgage Calculator</h1>
-    <p class="clear">Clear all</p>
+    <span class="clear" onclick="limparCampos()">Clear all</span>
 
     <main>
         <form>
@@ -25,19 +25,26 @@
                 <label for="rate">Interest Rate</label>
                 <input type="number" name="rate" id="rate">
             </p>
-            <p>
-                Mortgage Type
-                <input type="radio" name="type" id="repayment">Repayment
-                <input type="radio" name="type" id="interest">Interest Only
-            </p>
-            <input type="button" value="Calculate Repayments">
+            <div>
+                <p>Mortgage Type</p>
+                <label for="repayment">
+                    <fieldset class="radio">
+                        <input type="radio" name="type" id="repayment"><span class="txtrad">Repayment</span>
+                    </fieldset>
+                </label>
+                <label for="interest">
+                    <fieldset class="radio">
+                        <input type="radio" name="type" id="interest"><span class="txtrad">Interest Only</span>
+                    </fieldset>
+                </label>
+            </div>
+            <p></label><input type="button" value="Calculate Repayments" onclick="calcularPagamento()"></p>
         </form>
         <section class="results">
             <img src="assets/images/illustration-empty.svg"">
             <h2>Results shown here</h2>
             <p>Complete the form and click "calculate repayments" too see what your monthly repayments would be</p>
         </section>
-
     </main>
     <script src="script.js"></script>
 </body>

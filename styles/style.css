@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'normal';
+    src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "italic";
+    src: url('../assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('turetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-family: 'normal', sans-serif;
+}
+
+h1{
+    color: hsl(202, 55%, 16%);
+    padding: 20px 20px 0 20px ;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.clear{
+    padding: 0 20px;
+    color: hsl(200, 24%, 40%);
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.clear:hover{
+    cursor: pointer;
+    color: hsl(203, 41%, 72%);
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form{
+    padding: 10px;   
+}
+
+form p{
+    color: hsl(200, 24%, 40%);
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+form input{
+    outline: none;
+}
+
+form input[type="number"]{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(200, 24%, 40%);
+}
+
+.radio{
+    width: 96%;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid hsl(200, 24%, 40%);
+}
+
+input[type="radio"]{
+    margin-right: 20px;
+}
+
+.txtrad{
+    color: hsl(202, 55%, 16%);
+    font-weight: bold;
+}
+
+input[type="button"]{
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    color: hsl(202, 55%, 16%);
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.results{
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.results h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.results p{
+    font-weight: lighter;
+    color: hsl(203, 41%, 72%);
+}
